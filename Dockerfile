@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY lsyncd.conf.lua /etc/lsyncd/
 COPY docker-entrypoint.sh /usr/local/bin/
 
-ENV TS3_VERSION 3.0.13.3
+ENV TS3_VERSION 3.0.13.6
 RUN curl -s http://dl.4players.de/ts/releases/${TS3_VERSION}/teamspeak3-server_linux_amd64-${TS3_VERSION}.tar.bz2 | tar -jx -C /home/teamspeak
 
 VOLUME ["/home/teamspeak/backup"]
