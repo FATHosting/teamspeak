@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  teamspeak:
+    build: .
+    ports:
+      - "9987:9987/udp"
+      - "10011:10011"
+      - "30033:30033"
+    volumes:
+      - teamspeak-backup:/home/teamspeak/backup
+
+volumes:
+  teamspeak-backup:
+    driver: local
