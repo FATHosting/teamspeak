@@ -1,3 +1,7 @@
+settings {
+    inotifyMode = "CloseWrite or Modify"
+}
+
 sync {
     default.rsync,
     source = "/home/teamspeak/teamspeak3-server_linux_amd64",
